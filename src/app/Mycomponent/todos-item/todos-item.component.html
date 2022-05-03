@@ -1,0 +1,8 @@
+<h5 [class]="'noStrike'?todo.active:'strike'">{{todo.title }}</h5>
+<p>{{todo.desc }}</p>
+<div class="mb-3 form-check">
+    
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" (click)="onCheckboxClick()">
+    <label class="form-check-label" for="exampleCheck1">marks as done</label>
+  </div>
+<button class="btn btn-danger" (click)="onClick(todo)">delete</button>
